@@ -1,33 +1,17 @@
-import React, { Component } from 'react'
-import imageHero from './images/hero.png'
+import React from "react";
+import logo from "./images/hero2.png";
+import "./app.css";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="hero">
+        <img src={logo} className="App-logo" alt="logo" />
+      </header>
 
-  /**
-   * Component Did Mount
-   */
-
-  async componentDidMount() {}
-
-  /**
-   * Render
-   */
-
-  render() {
-    return (
-      <div className="container">
-        <div className="hero">
-          <img src={imageHero} />
-        </div>
-
-        <div className="tagline">
-          a website built on serverless components via the serverless framework
-        </div>
-      </div>
-    )
-  }
+      <p className="tagline">Everything is up and running!</p>
+    </div>
+  );
 }
+
+export default App;
