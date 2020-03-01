@@ -1,5 +1,7 @@
 import React from "react";
+import LowerText from "./components/LowerText";
 import logo from "./images/hero2.png";
+
 import "./app.css";
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      <p className="tagline">Everything is up and running!</p>
+      <LowerText />
     </div>
   );
 }
